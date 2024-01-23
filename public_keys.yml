@@ -1,0 +1,14 @@
+#cloud-config
+datasource:
+ Ec2:
+  strict_id: false
+ssh_pwauth: no
+users:
+  - name: spring
+    groups: sudo
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh-authorized-keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaHUjZyzDZne5MhKEeQiZUy+gA1D0pglEE4KLB7BXoqiakEOZA9Wh8cWYeHDG9jxbiT44OSzOKE43cBTXM510tfTJ2nKDnTNwvUhdNx1yxN0c546DjxPYORNrdS+X5AzZS2phmeDlakxn9lno23VOKkxCAd8e8IZAX6RR+GGymgeVQ1HaoKyAIqUNBBxNcf7UwEmSjTQsNhw5bbQChiCjI856xwZEqtC7lcRlWcOuaB0S0WV0EhE4iC8srShHCx6MvE1ryiYF9ogeKqj/uOjlna/xe9xOxzcHhl3ZUawlijPHFiZYaTotvlap6CCgu5q7HvTHujBtLnce8Xlpd1FHS8T6ZBoKFZCHKX1TViXDkmVUrszTjR/Jf8sphKK7+UDHT502WBBjDaWnAdIqKmPLt7pumarqD7PoArizV9ycJjn2YPMWWJmzdfmmPLrjTZSCooc0u2o7kKeKRw0prIHerTEr+EV4OiIIZSkYq4gYCVSGpnZ2OAlOiFuk+kR0ROUU= root@igor-VirtualBox
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCRccKf0jtP1rFZL3G5+4BSYlqnCz2UsMTlU/E+lyer1waGi+BzCLZ9MwaZTKZZElchrbaRH05i2bD7PlS5kT6rKG/aOXB7fdcq9HBwJa9vY3yZ0b1u3m9+NiwuOsH0kSm8WPj4WWpQQiLgjDTaSYh47GaR24clOuPi+tjKnTmQX/QU34mxQI6VynbUGn6qCpQN/kPe+SZkfZnBDEqi6f7yGM1cTw/Zx92cWv0v07PqAxuA/yTi8CpdjojsHMUQY/BmRwxW3emhOjDKERqQuIehcgRuQscvpcbpoWFFEbbUDs9xry4pu2xX2OcrTMs/wy28CrH2od8WbRC0FSfVexE1 ubuntu
+runcmd: []
